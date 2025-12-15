@@ -1,4 +1,4 @@
-## csv2pl — Convert Spotify CSV snapshots into Navidrome playlists
+## subsonic-playlists — Convert Spotify CSV snapshots into Navidrome playlists
 
 Create/update Navidrome playlists from CSV files without duplicating audio. Uses the Subsonic API to resolve tracks and build server-side playlists you can play in any Subsonic client (Ultrasonic/DSub) and cache offline on Android. This is designed to
 work with my other scripts I have made on my github profile as the structure of the csv/excel spreadsheet matters.
@@ -41,7 +41,6 @@ spotify-csv-to-navidrome/
 ```
 
 ### Notes
-Notes:
 - exports_root must point to a folder containing timestamped subfolders like 13-12-25_2254, each with one .csv per playlist. CSV columns: Track name, Album name, and Artist names as a single field joined by artist_1;artist_2.
 - diffs_root must point to a folder with .xlsx files produced by your diff script. The sheet must have the “Added” block (columns: Added, Artist, Album) and the “Removed” block (columns: Removed, Artist, Album). If your spreadsheet duplicates headers, the script also reads Artist.1/Album.1 on the right-hand side.
 - include_playlists is a case-insensitive substring filter. ["*"] means “process all playlists”. Example: ["Gym","Study"] processes only playlists whose names contain “gym” or “study”.
