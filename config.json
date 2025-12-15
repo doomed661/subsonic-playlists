@@ -1,0 +1,17 @@
+{
+    "base_url": "http://localhost:4533/rest",
+    "client_name": "csv2pl",
+    "api_version": "1.16.1",
+  
+    "exports_root": "C:/Users/doomed_to_fail/Downloads/Coding-Projects/spotify/exportify/exports",
+    "diffs_root":   "C:/Users/doomed_to_fail/Downloads/Coding-Projects/spotify/auto-exportify/diffs",
+  
+    "include_playlists": ["*"],
+  
+    "csv_artist_sep": ";",
+    "csv_headers": { "track": 0, "album": 1, "artists": 2 },
+  
+    "dedupe": true,
+    "prefer_exact_artist_title": true,
+    "dry_run": false
+  }
